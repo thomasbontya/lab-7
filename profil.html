@@ -1,0 +1,126 @@
+<!doctype html>
+	<html>	
+	<head>
+	<style>
+	
+	body { background-color: lightblue; }
+	h1 {color: white;}
+	h2 {color: rgb:(130, 20, 34);}
+	p {color: #3cb371;}
+	
+	table {backround-color: gray:}
+	ul {background-color: solidblue;}
+	table, tr, td, ul {border: 2px solidblack;}
+	tr:hover {background-color: #f5f5f5}
+	
+		h1 {font-family "Verdana";
+	font-style: bold;
+	font-size: 36px;} 
+	
+		p{font-family : "Arial";
+	font-size: 18px;}
+	
+	img {border:v2px solidblack;
+		border-radius: 12px; 
+		with: 150px;
+		display: block;
+		padding: 4px;
+		margin: left;
+		opacity: 0.9;
+		
+		</style>
+		
+		<script>
+		function Viitor() {
+		document.getElementById("numeProfil").innerHTML = "Bontya Thomas"
+		
+		var tabelEducatie = document.getElementById("tabelEducatie");
+		     tabelEducatie.rows[0].cells[0].innerHTML= "Colegiul National";
+			  tabelEducatie.rows[0].cells[2].innerHTML= "Vorbitul in public";
+			   tabelEducatie.rows[1].cells[0].innerHTML= "Universitatea Tehnica";
+			    tabelEducatie.rows[1].cells[2].innerHTML= "Gandire sistematica"; 
+				 tabelEducatie.rows[2].cells[0].innerHTML= "Universitatea Tehnica";
+				  tabelEducatie.rows[2].cells[1].innerHTML= "Anul II (master)";
+				  
+		document.getElementById("pozaProfil").src = "thomas.jpg";
+		
+		document.body.style.backgroundColor= "Tomato";
+		
+		var par = document.getElementByTagName("p");
+		var i;
+		
+		for (i=0; 1< par.length; i++)
+		{
+		 par[i].style.color = "blue"
+		 }
+		 document.getElementById("pozaProfil").style.opacity = "0.9";
+		 document.getElementById("pozaProfil").style.border = "5px";
+		 
+		 }
+		 function arataVarsta()
+		 {
+		 var azi = new Date;
+		 var varstaMea;
+		 
+		 var anNasc = document.getElementById("varsta").innerHTML;
+	     var anCurent = azi.getFullYear();
+		 varstaMea= anCurent - parseInt(anNasc);
+		 document.getElementById("varsta").innerHTML = varstaMea;
+		 }
+		 </script>
+		
+				   
+			
+		
+		
+	</head>
+	
+	<body>
+	
+	<h1> Bontya Thomas </hl>
+	
+	<img id = "pozaProfil" src="thomas12.jpg">
+	
+	
+	<p>Nume,Prenume: Bontya Thomas</p>
+	<p>Adresa de e-mail: thomasbontya@gmail.com</p>
+	<p>Nr. tel: 0741xxxxxx</p>
+	<p>Fii schimbarea pe care vrei să o vezi în lume!</p>
+	<p onmouseover = "arataVarsta()" id="varsta">2001</p>
+	<button onclick = " Viitor()" >Alta viata </button>
+	
+	<h4>Discipline de interes</h4>
+	
+	<table>
+		<th>Disciplina</th>
+<th>Anul</th>
+<th>Link</th>
+</tr>
+<tr>
+<td>Algebră liniară și geometrie analitică și diferențială
+
+<td>Anul I
+<td><a href="https://etti.utcluj.ro/planuri-de-invatamant.html">Descriere disciplină</a>
+</tr>
+<tr>
+<td>Programarea calculatoarelor și limbaje de programare I
+<td>Anul I
+<td><a href="https://etti.utcluj.ro/planuri-de-invatamant.html">Descriere disciplină</a>
+</tr>
+<td>Informatică aplicată
+<td>Anul I
+<td><a href="https://etti.utcluj.ro/planuri-de-invatamant.html">Descriere disciplină</a>
+
+	</tr>
+	</table>
+	<h4>Hobby-uri</h4>
+	<ul>
+		<li>-Swim</li>
+		<li>-Travel</li>
+		<li>-Driving</li>
+	</ul>
+<a href="file:///C:/Users/thoma/Desktop/programare/ia/lab%206/ex2/catalog.html"> Inapoi la Catalog </a>		
+	</body>
+	
+	</body>
+</html>
